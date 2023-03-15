@@ -24,7 +24,7 @@
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
             <!--  servirá para mudar a cor do botão após apertar -->
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabecalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -124,49 +124,51 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Mais vendidos</h2>
-        <div class="swiper">
-            <div class="swiper-pagination"></div>
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache Kafka e spring boot"></div>
-                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design"></div>
-                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript assertivo"></div>
-                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-End"></div>
-                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Javascript assertivo"></div>
-                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Portugol"></div>
-                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade web"></div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="card">
-            <!-- 1ª Linha -->
-            <div class="card__descricao">
-                <!-- 1ª Coluna -->
-                <div class="descricao">
-                    <img src="img/Estrelinhas.png" alt="">
-                    <h3 class="descricao__titulo">Autora do mês</h3>
-                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
-                    </p>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache Kafka e spring boot"></div>
+                    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design"></div>
+                    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript assertivo"></div>
+                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-End"></div>
+                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Javascript assertivo"></div>
+                    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade web"></div>
                 </div>
-                <!-- 2ª Coluna -->
-                <img src="img/juliana.svg" alt="Foto da Juliana Agarikov" class="descricao__imagem">
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+
+            <div class="card">
+            <!-- 1ª Linha -->
+                <div class="card__descricao">
+                    <!-- 1ª Coluna -->
+                    <div class="descricao">
+                        <img src="img/Estrelinhas.png" alt="">
+                        <h3 class="descricao__titulo">Autora do mês</h3>
+                        <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                        <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                        </p>
+                    </div>
+                    <!-- 2ª Coluna -->
+                    <img src="img/juliana.svg" alt="Foto da Juliana Agarikov" class="descricao__imagem">
+                </div>
 
 
             <!-- 2ª linha -->
-            <div class="card__botoes">
-                <!-- 1ª Coluna -->
-                <ul class="botoes">
-                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
-                </ul>
-                <!-- 2ª Coluna -->
-                <a href="#" class="botoes__ancora">Saiba mais</a>
+                <div class="card__botoes">
+                    <!-- 1ª Coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
+                    </ul>
+                    <!-- 2ª Coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
             </div>
         </div>
     </section>
@@ -182,14 +184,16 @@
             <li class="topicos__item"><a href="#" class="topicos__link">OO</a></li>
             <li class="topicos__item"><a href="#" class="topicos__link">Java</a></li>
         </ul>
-        <section class="contato">
-            <div class="contato__descricao">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-            </div>
-            <input type="email" name="" id="" placeholder="Cadastre seu e-mail" class="contato__email">
-        </section>
     </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" name="" id="" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+    
 
     <hr /> <!-- serve para quebrar. cria uma linha -->
 
